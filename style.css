@@ -1,6 +1,6 @@
 
   body {
-    background: #f8f9fa;
+    background: #ccc;   /* #f8f9fa */
   /*  padding-top: 70px; */
   }
 
@@ -46,3 +46,4 @@
       margin-top: 2rem;
     }
   }
+
