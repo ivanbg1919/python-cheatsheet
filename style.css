@@ -1,6 +1,6 @@
 
   body {
-    background: yellow;   /* #f8f9fa */
+    background: #f8f9fa; 
   /*  padding-top: 70px; */
   }
 
@@ -46,5 +46,6 @@
       margin-top: 2rem;
     }
   }
+
 
 
