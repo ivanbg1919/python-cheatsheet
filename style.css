@@ -1,6 +1,5 @@
-
   body {
-    background: #f8f9fa; 
+    background: #f8f9fa;
   /*  padding-top: 70px; */
   }
 
@@ -13,14 +12,14 @@
     overflow-x: auto;
   }
 
-  .hero {
-    padding-top: 20px;
-    background-color: #006400; /* Bootstrap primary blue */
-
+  .yellow {
+    background: #ffde71;
   }
 
-  .bg-boja {
-    background-color: green;
+  .hero {
+    padding-top: 20px;
+    background-color: #124ca0; /* Bootstrap primary blue */
+
   }
 
   .toc {
@@ -48,4 +47,21 @@
   }
 
 
+  .accordion-button {
+    background-color: #124ca0;
+    color: white;
+  }
 
+  .accordion-button:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+
+  .accordion-button:focus {
+    box-shadow: none; /* optional, remove Bootstrap focus shadow */
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: #004080;
+    color: white;
+  }
