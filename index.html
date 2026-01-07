@@ -11,30 +11,9 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark yellow fixed-top">  <!--  bg-dark  -->
-  <div class="container">
-
-    <a class="navbar-brand" href="#" style="color: #000">Python Cheatsheet</a>
-    <!--
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarMenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#variables">Variables</a></li>
-        <li class="nav-item"><a class="nav-link" href="#input">Input</a></li>
-        <li class="nav-item"><a class="nav-link" href="#strings">Strings</a></li>
-        <li class="nav-item"><a class="nav-link" href="#loops">Loops</a></li>
-        <li class="nav-item"><a class="nav-link" href="#functions">Functions</a></li>
-      </ul>
-    </div>  -->
-  </div>
-</nav>
-
 <!-- HERO -->
 <div class="hero text-light text-center py-5 mb-5">
-  <h1 class="display-5 pt-5">Python Cheatsheet</h1>
+  <h1 class="display-5 pt-3">Python Cheatsheet</h1>
   <p class="lead">Quick reference for Python syntax</p>
 </div>
 
@@ -80,8 +59,7 @@ In the above example,
 <pre><code>We use comments to add notes to our code. Good comments explain the hows and
 whys, not what the code does. That should be reflected in the code itself. Use
 comments to add reminders to yourself or other developers, or also explain your
-assumptions and the reasons you’ve written code in a certain way.
-
+assumptions and the reasons you’ve written code in a certain way.<br>
 # This is a comment and it won’t get executed.
 # Our comments can be multiple lines.</code></pre>
     </div>
@@ -97,8 +75,10 @@ assumptions and the reasons you’ve written code in a certain way.
   </h2>
   <div id="c3" class="accordion-collapse collapse">
     <div class="accordion-body">
-<pre><code>name = input("Enter your name: ")
-print(name)</code></pre>
+<pre><code>We can receive input from the user by calling the input() function.
+birth_year = int(input(‘Birth year: ‘))<br>
+The input() function always returns data as a string. So, we’re converting the
+result into an integer by calling the built-in int() function.</code></pre>
     </div>
   </div>
 </div>
@@ -112,8 +92,29 @@ print(name)</code></pre>
   </h2>
   <div id="c4" class="accordion-collapse collapse">
     <div class="accordion-body">
-<pre><code>text = "Hello"
-print(text.upper())</code></pre>
+<pre><code>We can define strings using single (‘ ‘) or double (“ “) quotes.
+To define a multi-line string, we surround our string with tripe quotes (“””).
+We can get individual characters in a string using square brackets [].
+course = ‘Python for Beginners’
+course[0] # returns the first character
+course[1] # returns the second character
+course[-1] # returns the first character from the end
+course[-2] # returns the second character from the end
+We can slice a string using a similar notation:
+course[1:5]
+The above expression returns all the characters starting from the index position of 1
+to 5 (but excluding 5). The result will be ytho
+If we leave out the start index, 0 will be assumed.
+If we leave out the end index, the length of the string will be assumed.
+We can use formatted strings to dynamically insert values into our strings:
+name = ‘Mosh’
+message = f’Hi, my name is {name}’
+message.upper() # to convert to uppercase
+message.lower() # to convert to lowercase
+message.title() # to capitalize the first letter of every word
+message.find(‘p’) # returns the index of the first occurrence of p
+(or -1 if not found)
+message.replace(‘p’, ‘q’)</code></pre>
     </div>
   </div>
 </div>
@@ -362,27 +363,10 @@ except ZeroDivisionError:
     <!-- TOC -->
     <div class="col-lg-4">
       <div class="toc">
-        <h5>Table of Contents</h5>
-        <a href="#variables">Variables</a>
-        <a href="#comments">Comments</a>
-        <a href="#input">Input</a>
-        <a href="#strings">Strings</a>
-        <a href="#arithmetic">Arithmetic</a>
-        <a href="#if">If</a>
-        <a href="#comparison">Comparison</a>
-        <a href="#while">While</a>
-        <a href="#for">For</a>
-        <a href="#lists">Lists</a>
-        <a href="#tuples">Tuples</a>
-        <a href="#dicts">Dictionaries</a>
-        <a href="#functions">Functions</a>
-        <a href="#exceptions">Exceptions</a>
-        <a href="#classes">Classes</a>
-        <a href="#inheritance">Inheritance</a>
-        <a href="#modules">Modules</a>
-        <a href="#packages">Packages</a>
-        <a href="#stdlib">Std Library</a>
-        <a href="#pypi">PyPI</a>
+        <h5>Useful links</h5>
+        <a href="https://www.python.org/" target="_blank">Python.org</a>
+        <a href="https://realpython.com/" target="_blank">Real Python</a>
+        <a href="https://www.hackerrank.com/domains/python" target="_blank">HackerRank</a>      
       </div>
     </div>
 
@@ -396,6 +380,3 @@ except ZeroDivisionError:
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
-
