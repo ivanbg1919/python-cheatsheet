@@ -16,22 +16,35 @@
     background: #ffde71;
   }
 
-  .hero {
-    padding-top: 20px;
-    background-color: #124ca0; /* Bootstrap primary blue */
 
+  .hero {
+  /*padding-top: 20px;
+  background-color: #124ca0; /* Bootstrap primary blue */
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #124ca0, #1e6be8, #4a90e2); /* fini plavi gradient */
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* lagani "lift" efekat */
+  text-align: center;
   }
+
+  /* SIDEBAR */
 
   .toc {
-    position: sticky;
-    top: 90px;
-  }
+  position: sticky;
+  top: 90px;
+  background: #1e1e1e;
+  color: #f5f5f5;
+  border-radius: 6px;
+  padding: 16px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
 
   .toc a {
     display: block;
     padding: 6px 0;
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-size: 0.95rem;
   }
 
@@ -48,12 +61,12 @@
 
 
   .accordion-button {
-    background-color: #124ca0;
+    background-color: #878080; /* #124ca0 */
     color: white;
   }
 
   .accordion-button:hover {
-    background-color: #0056b3;
+    background-color: #898383; /* #0056b3 */
     color: white;
   }
 
@@ -62,6 +75,6 @@
   }
 
   .accordion-button:not(.collapsed) {
-    background-color: #004080;
+    background-color: #898383; /* #004080 */
     color: white;
   }
